@@ -1,0 +1,27 @@
+#counters{
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    transform:translateY(-10px)
+}
+#counters button{
+    background-color: bisque;
+    color: black;
+    font-size: 1em;
+    margin-bottom: 10px;
+    
+}
+#rolls{
+    text-align: center;
+    font-size: 2em;
+}
+#rolls button{
+    font-size: 1em;
+}
+#age{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius:0fr;
+
+}
