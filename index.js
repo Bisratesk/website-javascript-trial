@@ -412,3 +412,37 @@ else{
 //=== strict equality operator(compares both value and datatype)
 //!= not equal operator
 //!== strict not equal operator
+
+//while loop : runs the loop until the condition is met
+/*
+let inputname=''
+while(inputname===''){
+   inputname=window.prompt('enter your username')
+}
+console.log(`your name is ${inputname}`)
+*/
+
+//for loop
+for(let i=0;i<5;i++){
+console.log(`this is iteration number ${i}`)
+}
+for(let i=1;i<=6;i++){
+    if(i==3){
+        continue;//break :gets u out of the loop
+    }
+
+    console.log(i)
+}
+
+//number guesing game
+let minnumber=1
+let maxnumber=100
+//if the min number is greater than one make sure to add the last +minnumber in there if not u can leave it
+let attempts;
+let running=true
+let guess;
+if(running){
+    guess=window.prompt('enter your name')
+    console.log(`your name is ${guess} and `)
+
+}
