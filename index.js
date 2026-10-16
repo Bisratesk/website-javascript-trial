@@ -435,14 +435,109 @@ for(let i=1;i<=6;i++){
 }
 
 //number guesing game
+
+//if the min number is greater than one make sure to add the last +minnumber in there if not u can leave it
+/*
 let minnumber=1
 let maxnumber=100
-//if the min number is greater than one make sure to add the last +minnumber in there if not u can leave it
-let attempts;
+let answer=Math.floor(Math.random()*(maxnumber-minnumber+1)+minnumber)
+attempts=0
 let running=true
-let guess;
-if(running){
-    guess=window.prompt('enter your name')
-    console.log(`your name is ${guess} and `)
-
+while(running){
+    guess=window.prompt(`guess a number between ${minnumber} - ${maxnumber}`)
+    guess=Number(guess)
+    attempts++
+    if(guess<answer){
+        window.alert('your answer is too low')
+    }
+    else if(guess>answer){
+        window.alert('your answer is too high')
+    }
+    else{
+        window.alert(`congratulations!your answer is correct.you attempted ${attempts}times`)
+        running=false
+    }
+*/
+//function : reusable code
+function happybirthday(username,age){//these are parameters
+    console.log('happy bd')
+    console.log('happy bd')
+    console.log(`happy bd ${username}`)
+    console.log(`you are ${age} years old `)
+//parameters should match up with the arguments
 }
+happybirthday('bisrat',23)//the ones in the bracket are called arguments
+happybirthday('guy',12)
+
+function add(x,y){
+    result=x+y
+    return result
+}
+let answer=add(2,3)
+console.log(answer)
+
+function sub(x,y){
+    subresult=x-y
+    return subresult
+    //return x-y
+}
+let subs=sub(5,2)
+console.log(subs)
+
+function multiply(x,y){
+    return x*y
+}
+let resultmultiply=multiply(2,3)
+console.log(resultmultiply)
+
+function iseven(number){
+    if(number%2===0){
+        return true
+    }
+    else{
+        return false
+    }
+    //return number % 2 === 0 ?true:false
+}
+
+console.log(iseven(5))
+
+function isvalidemail(email){
+    if(email.includes('@')){
+        return true
+    }
+    else{
+        return false
+    }
+
+    //email.includes('@') ? true:false
+
+    
+}
+console.log(isvalidemail('bisrat@gmail.com'))
+console.log(isvalidemail('bisrateskeatnaf7'))//false
+
+//variable scope:the area in which a variable is accessible
+//local and global variables
+//local :variables that are declared inside a function
+//global:variables that are declared outside a function
+//local example
+/* function1(){
+   let x=2
+   console.log(x)
+   }
+   function2(){
+   let x=2
+   console.log(x)}
+
+   function(1)
+   */
+//global variables
+/* let x=2
+function1(){
+console.log(x)
+function2()
+console.log(x)
+}
+*/
+
