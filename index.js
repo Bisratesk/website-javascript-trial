@@ -541,24 +541,28 @@ console.log(x)
 }
 */
 
-const inputtemp=document.getElementById('tempratureid')
-const farenheit=document.getElementById('farenid')
-const celsius=document.getElementById('celsiusid')
-const submittemp=document.getElementById('submittemp')
+const inputtemp=document.getElementById('tempid')
+const farenheit=document.getElementById('farenheit')
+const celsius=document.getElementById('celsius')
+const submittemps=document.getElementById('submittemps')
 const tempparagraph=document.getElementById('tempparagraph')
 let temprature
 
-submittemp.onclick=function(){
+submittemps.onclick=function(){
     if(farenheit.checked){
-        temprature=Number(inputtemp.value-32)*5/9
-        tempparagraph.textContent=temprature
+       temprature=Math.floor((inputtemp.value-32)*5/9)
+       tempparagraph.textContent=temprature
     }
     else if(celsius.checked){
-        temprature=Number(inputtemp.value*9/5)+32
-        tempparagraph.textContent=temprature
-         
+      temprature=Math.floor((inputtemp.value*9/5)+32)
+      tempparagraph.textContent=temprature
     }
     else{
-        tempparagraph.textContent='you havent checked nothing'
+         tempparagraph.textContent='you have clicked nothing!'
     }
 }
+
+//array: a variable like structure that can hold more than 1 value
+
+let fruits=['apple','mango','banana']
+console.log(fruits)
