@@ -540,6 +540,7 @@ function2()
 console.log(x)
 }
 */
+/*
 
 const inputtemp=document.getElementById('tempid')
 const farenheit=document.getElementById('farenheit')
@@ -561,8 +562,35 @@ submittemps.onclick=function(){
          tempparagraph.textContent='you have clicked nothing!'
     }
 }
+    */
 
 //array: a variable like structure that can hold more than 1 value
 
-let fruits=['apple','mango','banana']
+let fruits=['apple','mango','banana','orange']
+fruits.push('orange')//adds an element to the end of the array
+fruits.pop()//removes the last element of the array
+fruits.shift()//removes the first element of the array
+fruits.unshift('grape')//adds an element to the beginning of the array
 console.log(fruits)
+
+let numoffruits=fruits.length//gives the number of elements in the array
+console.log(numoffruits)
+/*
+for(i=0;i<fruits.length;i++){
+    console.log(fruits[i])
+}
+    */
+//enhanced for loop
+for(let fruit of fruits){
+    console.log(fruit)
+}
+//spread operator:allows you to expand an array into individual elements
+let numbers=[1,2,3,4,5]
+console.log(...numbers)//1 2 3 4 5
+
+//rest operator:allows you to collect multiple elements into an array
+function sum(...numbers){
+    let total=0
+    
+
+}
