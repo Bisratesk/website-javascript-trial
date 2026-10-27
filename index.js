@@ -594,3 +594,14 @@ function sum(...numbers){
     
 
 }
+
+function clickdice(){
+    inputdice=document.getElementById('diceinput').value
+    displayresult=document.getElementById('displayresult')
+    value=[]
+    for(let i=0;i<inputdice;i++){
+        value.push(Math.floor(Math.random()*6+1))
+    }
+   displayresult.textContent=value
+}
+//random password generator
